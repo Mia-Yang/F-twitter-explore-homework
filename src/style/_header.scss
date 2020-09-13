@@ -3,3 +3,11 @@
     justify-content: space-between;
     padding: $container-padding-y $container-padding-x;
 }
+
+.login-btn {
+    @include btn-variant($primary-color, transparent, $primary-color)
+}
+
+.register-btn {
+    @include btn-variant(white, $primary-color, $primary-color)
+}

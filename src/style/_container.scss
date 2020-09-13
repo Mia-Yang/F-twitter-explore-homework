@@ -10,5 +10,13 @@
     display: flex;
     flex-direction: column;
     padding: $container-padding-y $container-padding-x;
-    width: 350px;
+    width: 35%;
+}
+
+.login-btn {
+    @include btn-variant($primary-color, transparent, $primary-color)
+}
+
+.register-btn {
+    @include btn-variant(white, $primary-color, $primary-color)
 }
