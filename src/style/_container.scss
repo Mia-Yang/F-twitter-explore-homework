@@ -10,7 +10,31 @@
     display: flex;
     flex-direction: column;
     padding: $container-padding-y $container-padding-x;
-    width: 35%;
+    width: 30%;
+    border: 1px solid $color-base;
+    border-radius: 10px;
+
+    h1 {
+        @include heading(28px);
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    & > input {
+        height: 60px;
+        background-color: transparent;
+        border-width: 0 0 1px 0;
+        border-bottom: 1px solid $color-base;
+        outline: none;
+    }
+
+    .forgot {
+            color: $primary-color;
+    }
+    
+    .or {
+            text-align: center;
+    }  
 }
 
 .login-btn {

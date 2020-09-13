@@ -1,7 +1,8 @@
 .header{
     display: flex;
     justify-content: space-between;
-    padding: $container-padding-y $container-padding-x;
+    padding: 20px 30px;
+    border-bottom: 1px solid $color-base;
 }
 
 .login-btn {
