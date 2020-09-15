@@ -10,6 +10,7 @@
 <body>
   <header class="header">
     <h1>Twitter</h1>
+<!--    TODO: 因为这里是button，而不是导航链接，所以不用使用<nav>-->
     <nav>
       <ul>
         <li>
@@ -19,11 +20,15 @@
       </ul>
     </nav>
   </header>
+<!--  TODO feedback: css class 的命名没有反映业务逻辑，这里叫'main'就行了-->
   <main class="container">
     <form class="login-form">
+      <!--      TODO feedback: 这行文字，它只是在样式上加粗了，但是它并不是这个页面的heading, 所以不应该使用h标签，使用p标签，然后用css把它加粗就对了-->
       <h1>查看世界上正在发生的事情</h1>
+      <!--      TODO feedback: 语义化标签使用不正确：placeholder里面的内容应该放入<label>标签-->
       <input type="text" placeholder="电话、邮件地址或用户名">
       <input type="text" placeholder="密码">
+<!--      TODO feedback: 一般忘记密码是一个连接，那么这里就应该使用<a>标签 2： css class的命名没有反映业务逻辑，这里叫做'forget-password-link'更好-->
       <p class="forgot">忘记密码？</p>
       <button class="login-btn">登录</button>
       <p class="or">或</p>
